@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .left {
+        font-style: italic;
+      }
+
+      .right {
+        display: flex;
+        gap: 30px;
+      }
+
+      .section1 {
+        display: flex;
+        margin-top: 30px;
+        gap: 50px;
+        padding: 0 100px;
+      }
+
+      .img {
+        width: 350px;
+      }
+
+      .main-title > h2 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      /* section2 시작 */
+      .section2 {
+        display: flex;
+        justify-content: space-around;
+      }
+      .form {
+        display: flex;
+        /* flex-direction: column; */
+        padding: 10px;
+        gap: 5px;
+      }
+      main {
+        width: 80%;
+        margin: 0 auto;
+      }
+      /* .section2 > div {
+        width: 40%;
+      }
+      .section2 > div > img {
+        width: 100%;
+      }
+
+      .form-left {
+        border: 3px solid black;
+      } */
+
+      /* .button {
+        width: 50px;
+        margin: auto; 
+      } */
+
+      .section2 {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 70%;
+      }
+      .form-left > .form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+      }
+      .form-left > .form > .button {
+        width: 50px;
+        margin: auto;
+      }
+      .form-right {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <div>APPAREL SHOP</div>
+        </div>
+        <div class="right">
+          <div>HOME</div>
+          <div>PRODUCTS</div>
+        </div>
+      </nav>
+      <img src="assets/apparel.png" alt="" />
+    </header>
+
+    <main>
+      <section class="section1">
+        <img class="img" src="assets/apparel2.jpg" alt="" />
+        <div class="main-title">
+          <h2>About Our Company</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            mollitia voluptas natus dolores cum aperiam harum consequuntur
+            similique doloribus vel voluptatibus, beatae hic veniam, modi a
+            perferendis corrupti fugit suscipit.
+          </p>
+        </div>
+      </section>
+
+      <h2>Contact Us</h2>
+      <!-- section2  -->
+      <section class="section2">
+        <div class="form-left">
+          <form class="form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <input type="submit" class="button" />
+          </form>
+        </div>
+        <div class="form-right">
+          <img src="assets/apparel3.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>More</section>
+    </main>
+
+    <footer>
+      <div>Copyright</div>
+    </footer>
+  </body>
+</html>
