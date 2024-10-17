@@ -1,0 +1,47 @@
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.left {
+  font-style: italic;
+}
+
+.right {
+  box-sizing: border;
+  gap: 50px;
+}
+
+.img {
+  width: 500px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.margin {
+  margin: 30px;
+  gap: 30px;
+}
+. p {
+  text-align: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.form {
+  border: 1px solid black;
+  height: px;
+}
+
+.center {
+  text-align: center;
+}
+
+.img2 {
+  width: 100px;
+}

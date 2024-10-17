@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .form {
+      border: 1px solid black;
+      padding: 2rem;
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .justify-content {
+      justify-content: center;
+    } */
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-box {
+        border: 1px solid;
+        padding: 2rem;
+      }
+
+      .button {
+        width: 50%;
+        margin: auto;
+      }
+
+      .form-box > * {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="flex form-box">
+      <label for="username">Username :</label>
+      <input type="text" id="username" name="name" />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" />
+
+      <input class="button" type="button" value="send" />
+    </form>
+  </body>
+</html>

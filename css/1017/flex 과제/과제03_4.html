@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        background-color: black;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .left {
+        padding-left: 10px;
+      }
+
+      /* 회원가입, 로그인 간격 늘리고 싶어 -> gap -> 왜 안돼? 
+    -> gap은 flex, grid에서 사용 가능 -> flex 클래스 부여 */
+
+      .right {
+        padding-right: 10px;
+        gap: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      /* class=right만 할 때는 이것도 괜찮음 
+    .right > a {
+      padding: 0 3px;
+    } 
+      */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex">
+        <div class="left">
+          <a href="">MyBrand</a>
+        </div>
+        <div class="right flex">
+          <a href="">회원가입</a>
+          <a href="">로그인</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

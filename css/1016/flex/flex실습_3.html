@@ -4,96 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      nav {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .left {
-        font-style: italic;
-      }
-
-      .right {
-        display: flex;
-        gap: 30px;
-      }
-
-      .section1 {
-        display: flex;
-        margin-top: 30px;
-        gap: 50px;
-        padding: 0 100px;
-      }
-
-      .img {
-        width: 350px;
-      }
-
-      .main-title > h2 {
-        text-align: center;
-      }
-      h2 {
-        text-align: center;
-      }
-      /* section2 시작 */
-      .section2 {
-        display: flex;
-        justify-content: space-around;
-      }
-      .form {
-        display: flex;
-        /* flex-direction: column; */
-        padding: 10px;
-        gap: 5px;
-      }
-      main {
-        width: 80%;
-        margin: 0 auto;
-      }
-      /* .section2 > div {
-        width: 40%;
-      }
-      .section2 > div > img {
-        width: 100%;
-      }
-
-      .form-left {
-        border: 3px solid black;
-      } */
-
-      /* .button {
-        width: 50px;
-        margin: auto; 
-      } */
-
-      .section2 {
-        display: flex;
-        justify-content: space-around;
-        margin: auto;
-        width: 70%;
-      }
-      .form-left > .form {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid black;
-      }
-      .form-left > .form > .button {
-        width: 50px;
-        margin: auto;
-      }
-      .form-right {
-        width: 70%;
-      }
-    </style>
+    <link rel="stylesheet" href="flex실습_3.css" />
   </head>
   <body>
+    <!-- header 시작 -->
     <header>
-      <nav>
-        <div class="left">
+      <nav class="flex justify">
+        <div class="flex left">
           <div>APPAREL SHOP</div>
         </div>
-        <div class="right">
+        <div class="flex right">
           <div>HOME</div>
           <div>PRODUCTS</div>
         </div>
@@ -101,10 +21,12 @@
       <img src="assets/apparel.png" alt="" />
     </header>
 
+    <!-- main 시작 -->
     <main>
-      <section class="section1">
+    <!-- section 1 -->
+      <section class="flex justify-between margin">
         <img class="img" src="assets/apparel2.jpg" alt="" />
-        <div class="main-title">
+        <div class="p">
           <h2>About Our Company</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
@@ -117,22 +39,54 @@
 
       <h2>Contact Us</h2>
       <!-- section2  -->
-      <section class="section2">
-        <div class="form-left">
+      <section class="flex justify-around margin">
+        <div>
           <form class="form">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <label for="username">Username :</label>
+            <input type="text" id="username" name="name" /> <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" /> <br>
             <input type="submit" class="button" />
           </form>
         </div>
-        <div class="form-right">
-          <img src="assets/apparel3.jpg" alt="" />
+        <div>
+          <img class="img" src="assets/apparel3.jpg" alt="" />
         </div>
       </section>
-
-      <section>More</section>
+<!-- seciton 3 -->
+      <section>
+        <h2>More</h2>
+        <div class="flex justify-around margin">
+          <div>
+            <img class="img2" src="assets/mail.png" alt="">
+            <div class="center">
+              <div>email</div>
+              <div>dfdf@</div>
+            </div>
+          </div>
+          <div>
+            <img class="img2" src="assets/telephone.png" alt="">
+            <div class="center">
+              <div>email</div>
+              <div>dfdf@</div>
+            </div>
+          </div>
+          <div>
+            <img class="img2" src="assets/circle.png" alt="">
+            <div class="center">
+              <div>email</div>
+              <div>dfdf@</div>
+            </div>
+          </div>
+          <div>
+            <img class="img2" src="assets/clock.png" alt="">
+            <div class="center">
+              <div>email</div>
+              <div>dfdf@</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>

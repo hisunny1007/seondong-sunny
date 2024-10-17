@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header > nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+.header > nav > ul > li {
+  margin: 0 10px;
+}
+
+.header > img {
+  width: 100%;
+}
+
+/* 양쪽에 여백 있는거 margin 이 더 깔끔,  */
+.container {
+  width: 65%;
+  margin: 2rem auto;
+}
+
+.about {
+  display: flex;
+}
+
+/* border-radius 사진 둥글게 */
+.about > img {
+  display: block;
+  width: 40%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.about > div {
+  padding: 1rem;
+}
+
+.about > div >h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.contact-form {
+  border: 1px solid;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.contact > h2 {
+  text-align: center;
+  margin: 1rem;
+
+}
+
+.contact > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact > div > img {
+  width: 35%;
+}
+
+.contact-form > * {
+  margin: 3px;
+}
+
+.contact-form
+
+/* input type=submit에 class 속성 부여하는 것과 동일 */
+.contact-form > input[type='submit'] {
+  width: 50px;
+  margin: auto;
+  color: red;
+}
+
+.more > h2 {
+  text-align: center;
+  margin: 1rem;
+}
+/* section title h2에 class부여해서 통합  */
+
+.more img {
+  width: 35%;
+}
+
+.more-info {
+  text-align: center;
+  display: flex;
+}
+
+.more-info > li {
+  
+}

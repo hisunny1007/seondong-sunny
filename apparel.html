@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="apparel.css" />
+  </head>
+  <body>
+    <!-- header 시작 -->
+    <!-- h1 / ul 각각에 마진 있어서 같은 줄로 안 나옴  -->
+    <header class="header">
+      <nav>
+        <h1>
+          <a href="">APPAREL SHOP</a>
+        </h1>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">PRODUCTS</a></li>
+        </ul>
+      </nav>
+      <img src="assets/apparel.png" alt="" />
+    </header>
+
+    <!-- main + footer 가로 제약이 있어서 합쳐서 div 묶는 게 좋음 -->
+    <div class="container">
+      <main>
+        <!-- section 1 -->
+        <section class="about">
+          <img src="assets/apparel2.jpg" alt="" />
+          <div>
+            <h2>About Our Company</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam aliquam in iure odit, accusantium officia incidunt
+              quaerat, sit quis voluptas provident, similique rem quisquam ipsa
+              repellendus sint ex quos quibusdam.
+            </p>
+          </div>
+        </section>
+
+        <!-- section2 -->
+        <section class="contact">
+          <h2>contact us</h2>
+          <div>
+            <form class="contact-form">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+              />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+
+              <input type="submit" value="send"/>
+            </form>
+            <img src="assets/apparel3.jpg" alt="" />
+          </div>
+        </section>
+
+        <!-- section3 -->
+        <section class="more">
+          <h2>more</h2>
+          <ul class="more-info">
+            <li>
+              <div>
+                <img src="assets/mail.png" alt="" />
+                <div>email adress</div>
+              </div>
+              <div>a@example.com</div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/clock.png" alt="" />
+                <div>working hour</div>
+              </div>
+              <div>9am ~ 6pm</div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/clock.png" alt="" />
+                <div>working hour</div>
+              </div>
+              <div>9am ~ 6pm</div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/clock.png" alt="" />
+                <div>working hour</div>
+              </div>
+              <div>9am ~ 6pm</div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <hr />
+
+      <footer>all rights reserved</footer>
+    </div>
+  </body>
+</html>

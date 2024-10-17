@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .left {
+        font-style: italic;
+      }
+
+      .right {
+        display: flex;
+        gap: 30px;
+      }
+
+      .section1 {
+        display: flex;
+        margin-top: 30px;
+        gap: 50px;
+        padding: 0 100px;
+      }
+
+      .img {
+        width: 350px;
+      }
+
+      .main-title > h2 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      /* section2 시작 */
+      .section2 {
+        display: flex;
+        justify-content: space-around;
+      }
+      .form {
+        display: flex;
+        /* flex-direction: column; */
+        padding: 10px;
+        gap: 5px;
+      }
+      main {
+        width: 80%;
+        margin: 0 auto;
+      }
+      /* .section2 > div {
+        width: 40%;
+      }
+      .section2 > div > img {
+        width: 100%;
+      }
+
+      .form-left {
+        border: 3px solid black;
+      } */
+
+      /* .button {
+        width: 50px;
+        margin: auto; 
+      } */
+
+      .section2 {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 70%;
+      }
+      .form-left > .form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+      }
+      .form-left > .form > .button {
+        width: 50px;
+        margin: auto;
+      }
+      .form-right {
+        width: 70%;
+      }
+    </style>
+  
