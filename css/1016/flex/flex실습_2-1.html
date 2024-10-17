@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .center {
+        width: 700px;
+        height: 700px;
+        border: 2px solid;
+      }
+
+      /* flex 관련 클래스 */
+      .flex {
+        display: flex;
+      }
+      .display-column {
+        flex-direction: column;
+      }
+      .justify-content {
+        justify-content: center;
+      }
+
+      .align-items {
+        align-items: center;
+      }
+
+      .container {
+        margin: auto;
+        gap: 100px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div class="center flex display-column justify-content align-items">
+        <!-- 큰 네모 안에 더 큰 div로 9개 하나로 만드는 게 구조상 좋음 -->
+        <div class="flex container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+
+        <div class="flex container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+
+        <div class="flex container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
