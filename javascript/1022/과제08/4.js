@@ -12,7 +12,7 @@ let total = 0
 console.log(N)
 
 for (let i = 1 ; i <= 7; i++) {
-  if (i % 2 ==0) {
+  if (i % 2 === 0) {
     total += i
   }
 }

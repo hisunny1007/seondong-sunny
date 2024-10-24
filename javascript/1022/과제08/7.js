@@ -7,24 +7,25 @@
 
 // push()는 다양한 데이터 타입을 배열에 추가할 수 있으며,
 // 숫자, 문자열, 불리언 값, 그리고 객체도 넣을 수 있습니다.
+
 let todos = []
 
 todos.push(
   {
-    "todoId": 1,
-    "content": "예습하기",
-    "isCompleted": false
-  },
-  {
-    "todoId": 2,
-    "content": "강의듣기",
-    "isCompleted": false
-  },
-  {
-    "todoId": 3,
-    "content": "복습하기",
-    "isCompleted": false
-  }
+  "todoId": 1,
+  "content": "예습하기",
+  "isCompleted": false
+},
+{
+  "todoId": 2,
+  "content": "강의듣기",
+  "isCompleted": false
+},
+{
+  "todoId": 3,
+  "content": "복습하기",
+  "isCompleted": false
+}
 )
 
 console.log(todos)
