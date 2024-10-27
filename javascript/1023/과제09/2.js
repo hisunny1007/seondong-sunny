@@ -30,3 +30,19 @@ let result = compare(num1, num2);
 console.log(result);
 
 // console.log(compare(num1,num2))
+
+
+function compare (x1, x2) {
+  if (x1 > x2) {
+    return x1
+  } else if (x1 < x2) {
+    return x2
+  } else {
+    return null
+  }
+}
+
+let num3 = 4
+let num4 = 6
+
+console.log(compare(num3, num4))

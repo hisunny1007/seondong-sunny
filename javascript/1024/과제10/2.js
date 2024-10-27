@@ -8,3 +8,11 @@ const doubled = arr.map((num) => {
 });
 
 console.log(doubled);
+
+
+// 강사님 풀이 //
+let doubledArr = arr.map(function (num) {
+  return num * 2;
+});
+
+console.log(doubledArr);

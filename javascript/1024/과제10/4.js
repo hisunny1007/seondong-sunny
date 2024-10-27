@@ -8,3 +8,12 @@ const newarr = arr.findIndex((num) => {
 });
 
 console.log(newarr);
+
+// 강사님 풀이 //
+// let firstFiveIndex = arr.findIndex((num) => num === 5);
+
+let firstFiveIndex = arr.findIndex(function (num) {
+  return num === 5;
+});
+
+console.log(firstFiveIndex);

@@ -12,7 +12,25 @@ arr.forEach((num) => {
   if (num > 0) {
     console.log(num)
   }
-});
+}); // [배열은 x ]
+
+// 배열로 반환하고 싶으면?
+
+
+const result = arr.filter((num) => {
+  return num > 0
+})
+
+console.log(result)
+
+
+// 반복문 사용 //
+
+for (let num of arr) {
+  if (num > 0) {
+    console.log(num)
+  }
+}
 
 
 // forEach()

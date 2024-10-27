@@ -16,3 +16,11 @@ const evenNumbersVer2 = matrix.filter((arr) => !((arr[0] + arr[1]) % 2));
 
 console.log(evenNumbersVer2);
 console.log(matrix.filter((arr) => !((arr[0] + arr[1]) % 2)));
+
+// 강사님 풀이 //
+let new_matrix = matrix.filter((arr) => {
+  let total = arr[0] + arr[1];
+  return total % 2 === 0;
+});
+
+console.log(new_matrix);
