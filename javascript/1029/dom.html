@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .font {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 글씨를 "hello dom"으로 변경하시오 -->
+    <div id="text">Hello World!</div>
+
+    <!-- background-color를 red로, height, width를 100px로 변경하시오 -->
+    <div id="box">Hello World!</div>
+
+    <!-- 글씨 크기를 3rem으로 바꾸시오 -->
+    <div id="size">글씨</div>
+    <!-- //    <div id="size", class = 'font'>글씨</div> -->
+
+    <!-- li태그들의 font 크기를 3rem으로 바꾸시오 -->
+    <ul>
+      <li class="list">hello</li>
+      <li class="list">world</li>
+      <li class="list">css</li>
+      <li class="list">javascript</li>
+    </ul>
+  </body>
+  <script>
+    const idText = document.querySelector('#text');
+    idText.textContent = 'hello dom';
+
+    const idBox = document.querySelector('#box');
+    idBox.style.backgroundColor = 'red';
+    idBox.style.height = '100px';
+    idBox.style.width = '100px';
+
+    const idSize = document.querySelector('#size');
+    idSize.setAttribute('class', 'font');
+    
+    const li_array = document.querySelectorAll('.list');
+    // console.log(li_array)
+    // console.log(li_array[0])
+    li_array.forEach((liTag) => {
+      liTag.classList.add('font');
+    });
+    // 선택자로 활용할 때만 . #
+    // queryselectorall 은 배열! (개별요소 불가능)
+    // getAttribute, setAttribute, classList, className 등은 모두 개별 요소에 적용
+
+    
+  </script>
+</html>
