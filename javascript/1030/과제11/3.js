@@ -14,3 +14,9 @@ arr.forEach((num) => {
     console.log(num)
   }
 })
+
+// 강사님 풀이 //
+// 양수만 출력
+arr.forEach((num) => {
+  if (num > 0) console.log(num);
+});
