@@ -24,7 +24,7 @@ for (let num of arr.reverse()) {
 
 // 강사님 풀이 //
 console.log('배열의 길이 활용');
-for (let i = arr.length - 1; i >= 0; i--) {
+for (let i = arr.length -1; i >= 0; i--) {
   console.log(arr[i]);
 }
 

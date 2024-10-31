@@ -7,14 +7,18 @@ for (let num of arr) {
   console.log(num)
 }
 
-for (let num in arr) {
-  let el = arr[num]
-  console.log(el)
-}
+// for (let num in arr) {
+//   let el = arr[num]
+//   console.log(el)
+// }
 
 arr.forEach((num) => {
   console.log(num)
 })
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i])
+}
 
 // 강사님 풀이 //
 

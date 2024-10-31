@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 입력을 하면 입력한 text가 아래의 div태그에 표현되도록 바꾸시오. -->
+    <!-- hint : input의 입력값은 value로 표현된다. -->
+    <div class="container">
+      <input type="text" class="input"/>
+      <div id = result></div>
+    </div>
+
+    <script>
+      const container = document.querySelector('.container')
+      const input = document.querySelector('.input')
+      const result = document.querySelector('#result')
+
+      input.addEventListener('input', (event) => {
+
+        let result2 = event.target.value 
+        // event.target은 이벤트가 실행된(발생) 요소
+        // input.value랑 같은데 더 자세함
+        result.textContent = result2
+        // console.log(event.target.value)
+      })
+      
+      // input.addEventListener('input', () => {
+      //   console.log(input.value)
+      // })
+    </script>
+ 
+  </body>
+</html>

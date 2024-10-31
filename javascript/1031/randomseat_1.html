@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display : flex;
+        justify-content: center;
+      }
+      .box {
+        width: 100px;
+        height: 50px;
+        border: 1px solid blue;
+        justify-content: center;
+      }
+
+
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+<body>
+  <div class="container">
+    <div class="flex">
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+    </div>
+    <div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+    </div>
+    <div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+    </div>
+    <div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+      <div class="box">d</div>
+    </div>
+    <script src="
+      https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js">
+    </script>
+    <script>
+      const name = [
+      '가경식',
+      '강경훈',
+      '김동훈',
+      '김상호',
+      '노영재',
+      '박재훈',
+      '박종빈',
+      '박하은',
+      '서승덕',
+      '오예진',
+      '원성준',
+      '육슬찬',
+      '윤대정',
+      '이상호',
+      '이재현',
+      '이태영',
+      '임수빈',
+      '임유진',
+      '정명훈',
+      '정승연',
+      '정여원',
+      '최원호',
+      '차윤선',
+    ];
+    const studentName = _.shuffle(name);
+    const seats = document.querySelectorAll('.box')
+// 0 15 19 23 27
+    for (let i = 0; i < seats.length; i++) {
+        let seat = seats[i+1]
+        seat.textContent = studentName[i]
+    }
+
+    </script>
+</body>
+</html>

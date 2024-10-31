@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- html 코드도 자유롭게 수정하세요! -->
+    <!-- 버튼을 누르면 숫자가 1 증가하는 기능을 구현하시오 -->
+    <div class="container">
+      <div id="number">0</div>
+      <button id="button">버튼</button>
+    </div>
+
+    <!-- <script>
+      const number = document.querySelector('#number')
+      const button = document.querySelector('#button')
+
+      let newNumber = 0
+
+      button.addEventListener('click', () => {
+        // let newNumber = 0 // 클릭할 때 1 됐다가 다시 0 됨
+        newNumber ++
+        number.textContent = newNumber // 변수가 저장하고 있는(갖고) 있는 값을 넣어줌.... 
+      })
+
+    </script> -->
+
+    <!-- 위랑 같은 것임 -->
+    <script>
+      const number = document.querySelector('#number');
+      const button = document.querySelector('#button');
+
+      button.addEventListener('click', () => {
+        let newNumber = parseInt(number.textContent);
+
+        newNumber += 1;
+        number.textContent = newNumber;
+      });
+    </script>
+
+    <!-- html 문서는 문자 / 0도 문자열이여서 숫자로 바꿔야함. parseint 써서 -->
+  </body>
+</html>

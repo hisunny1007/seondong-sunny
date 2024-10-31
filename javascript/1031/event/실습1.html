@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- html 코드도 자유롭게 수정하세요! -->
+
+    <!-- button을 클릭하면 원본 텍스트가 "텍스트가 바뀜"으로 변하도록 구현하시오. -->
+    <div class="container">
+      <div>바뀔 예정인 텍스트</div>
+      <button>클릭</button>
+    </div>
+
+    <script>
+      const container = document.querySelector('.class');
+      const button = document.querySelector('button');
+      const divTag = document.querySelector('div');
+
+      // button.addEventListener(트리거, 동작)
+      button.addEventListener('click', () => {
+        divTag.textContent = '텍스트가 바뀜';
+      });
+    </script>
+  </body>
+</html>

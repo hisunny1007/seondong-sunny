@@ -17,6 +17,7 @@ const newArr = arr.reduce((acc, cur) => {
 
 console.log(newArr);
 
+// 강사님 풀이 //
 // 모든 원소를 곱한 값 계산
 const product = arr.reduce((acc, num) => acc * num, 1);
 console.log(product);

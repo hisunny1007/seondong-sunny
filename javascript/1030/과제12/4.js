@@ -21,5 +21,39 @@ const comments = [
 ];
 
 
+for (let post of posts) {
+  let postsId = post.id
+  // console.log(`${postsId}번 게시글의 댓글 수`)
+
+  let commentNum = 0
+  for (let comment of comments) {
+    let commentId = comment.postId
+    if (commentId === postsId) {
+      commentNum += 1
+    }
+  }
+  console.log(`${postsId}번 게시글의 댓글 수 ${commentNum}`)
+  
+}
 
 
+
+
+
+// commentNum = 0
+// for (let comment of comments) {
+//   let commentId = comment.postId
+//   if (commentId === posts.id) {
+//     commentNum += 1
+//   }
+// }
+// console.log(commentNum)
+
+// commentNum = 0
+// for (let comment of comments) {
+//   let commentId = comment.postId
+//   if (commentId === posts.id) {
+//     commentNum += 1
+//   }
+// }
+// console.log(commentNum)

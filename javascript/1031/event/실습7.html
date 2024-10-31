@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 색상을 입력하면 텍스트의 색이 변하는 기능을 구현하시오. -->
+    <div class="container">
+      <h1 id="h1Text">what color am I</h1>
+      <input type="text" class="input" />
+      <input type="color" class="input2" />
+    </div>
+
+    <script>
+      // const container = document.querySelector('.container')
+      const h1Text = document.querySelector('#h1Text');
+      const input = document.querySelector('.input');
+      const input2 = document.querySelector('.input2');
+
+      input.addEventListener('input', (event) => {
+        let result = event.target.value;
+        h1Text.style.color = result;
+      });
+
+      input2.addEventListener('input', (event) => {
+        let result2 = event.target.value;
+        h1Text.style.color = result2;
+        input.value = result2;
+      });
+    </script>
+  </body>
+</html>

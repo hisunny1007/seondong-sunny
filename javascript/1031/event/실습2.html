@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- html 코드도 자유롭게 수정하세요! -->
+    <!-- 무언가를 클릭하면 원본 텍스트가 빨간색으로, 다른 무언가를 클릭하면 원본 텍스트가 파란색으로 변하도록 구현하시오. -->
+    <div class="container">
+      <div id="newText">이 텍스트의 색상을 바꾸세요!</div>
+      <button id="redButton">버튼 클릭</button>
+      <button id="blueButton">실행 취소</button>
+    </div>
+
+    <script>
+      // const container = document.querySelector('.container');
+      const newtext = document.querySelector('#newText');
+      const redbutton = document.querySelector('#redButton');
+      const bluebutton = document.querySelector('#blueButton');
+
+      redbutton.addEventListener('click', () => {
+        newtext.style.color = 'red';
+      });
+
+      bluebutton.addEventListener('click', () => {
+        newtext.style.color = 'blue';
+      });
+    </script>
+
+  </body>
+</html>

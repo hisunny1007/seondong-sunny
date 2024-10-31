@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+      }
+
+      .card-title {
+        font-weight: bold;
+      }
+
+      .card-body {
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 아래 데이터를 사용해서 container 안에 카드 형태의 요소들을 생성하세요 -->
+    <!-- <div id="cardContainer">
+
+      <div class="card" style="background-color: #색상">
+        <div class="card-title">제목</div>
+        <div class="card-body">내용</div>
+      </div>
+      <div class="card" style="background-color: #색상">
+        <div class="card-title">제목</div>
+        <div class="card-body">내용</div>
+      </div>
+      <div class="card" style="background-color: #색상">
+        <div class="card-title">제목</div>
+        <div class="card-body">내용</div>
+      </div>      
+
+    </div> -->
+
+    <div id="cardContainer"></div>
+
+    <script>
+      
+      const cards = [
+        { title: '카드1', content: '내용1', color: '#ffeeee' },
+        { title: '카드2', content: '내용2', color: '#eeffee' },
+        { title: '카드3', content: '내용2', color: '#eeeeff' },
+      ];
+
+
+      // 컨테이너 안에 카드1, 카드2, 카드3 총 3개의 카드를 넣을거야.
+      // 먼저 카드 3개 만들고 컨테이너에 넣자
+
+      const container = document.querySelector('#cardContainer');
+
+      // cards.forEach((cardData) => {
+      //   const {title, content, color} = cardData
+
+      
+      // // cards.forEach((cardData) => {
+        //   const title = cardData.title
+        //  const title = cardData['title']
+        //   const content = cardData.content
+        //   const color = cardData.color
+        
+        const cardData = cards[0]
+  
+        const title = cardData.title
+        const content = cardData.content
+        const color = cardData.color
+        
+  
+        // card 만들기
+        const cardTag = document.createElement('div')
+        cardTag.classList.add('card')
+        cardTag.style.backgroundColor = color
+  
+        // card-title 만들기
+        const cardTitleTag = document.createElement('div')
+        cardTitleTag.classList.add('card-title')
+        cardTitleTag.textcontent = title    
+  
+        // card-body 만들기
+        const cardBodyTag = document.createElement('div')
+        cardBodyTag.classList.add('card-body')
+        cardBodyTag.textcontent = content   
+  
+        // container에 넣어주기
+  
+        cardTag.append(cardTitleTag, cardBodyTag)
+        container.append(cardTag)
+      })
+
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- html 코드도 자유롭게 수정하세요! -->
+
+    <!-- button을 클릭하면 원본 텍스트가 "텍스트가 바뀜"으로 변하도록 구현하시오. -->
+    <div class="container">
+      <di class="text">바뀔 예정인 텍스트</di>
+      <button class="button">클릭</button>
+    </div>
+
+    <script>
+      let container = document.querySelector('.container');
+      let text = document.querySelector('.text');
+      let button = document.querySelector('.button');
+
+      button.addEventListener('click', () => {
+        text.textContent = '텍스트가 바뀜';
+      });
+    </script>
+
+    <!-- 무언가를 클릭하면 원본 텍스트가 빨간색으로, 다른 무언가를 클릭하면 원본 텍스트가 파란색으로 변하도록 구현하시오. -->
+    <div class="container">
+      <div class="changeColor">이 텍스트의 색상을 바꾸세요!</div>
+      <button class="red">버튼</button>
+      <button class="blue">취소</button>
+    </div>
+
+    <script>
+      let changeColor = document.querySelector('.changeColor');
+      let redColor = document.querySelector('.red');
+      let blueColor = document.querySelector('.blue');
+
+      redColor.addEventListener('click', () => {
+        changeColor.style.color = 'red';
+      });
+
+      blueColor.addEventListener('click', () => {
+        changeColor.style.color = 'blue';
+      });
+    </script>
+
+    <!-- button을 클릭하면 텍스트가 보였다 안보였다 바뀌도록 구현하시오. -->
+    <!-- display : hidden 속성 및 class를 활용합니다. -->
+    <!-- display : none 속성 및 class를 활용합니다. -->
+    <!-- visibility : hidden 속성 및 class를 활용합니다. -->
+    <div class="container">
+      <div>보였다 안보였다</div>
+      <button>클릭</button>
+    </div>
+
+    <script>
+
+    </script>
+    <!-- 입력을 하면 입력한 text가 아래의 div태그에 표현되도록 바꾸시오. -->
+    <!-- hint : input의 입력값은 value로 표현된다. -->
+    <div class="container" id="container4">
+      <input type="text" id="textinput" />
+      <div class="input2"></div>
+    </div>
+
+    <script>
+      const textInput = document.querySelector('#textinput');
+      const input2 = document.querySelector('.input2');
+
+      textInput.addEventListener('input', (event) => {
+        let target = event.target;
+        let targetValue = target.value;
+        input2.textContent = targetValue;
+      });
+    </script>
+
+    <!-- 마우스를 올리면 배경색이 빨간색으로 변하고, 내리면 다시 검정색으로 변하는 기능을 구현하시오. -->
+    <div class="container">
+      <div class="box" id="box5"></div>
+    </div>
+
+    <script>
+      const box5 = document.querySelector('#box5');
+      box5.addEventListener('mouseover', () => {
+        box5.style.backgroundColor = 'red';
+      });
+      box5.addEventListener('mouseout', () => {
+        box5.style.backgroundColor = 'black';
+      });
+    </script>
+
+    <!-- 버튼을 누르면 숫자가 1 증가하는 기능을 구현하시오 -->
+    <div class="container">
+      <div class="numberplus">0</div> 
+      <button class="button2">버튼</button>
+    </div>
+
+    <script>
+      const button2 = document.querySelector('.button2');
+      const numberplus = document.querySelector('.numberplus')
+
+      // let num = 0;
+      // button2.addEventListener('click', () => {
+      //   num++;
+      //   numberplus.textContent = num
+      // })
+      
+      button2.addEventListener('click', () => {
+        // let num = numberplus.textContent // 0111111111111111111111111
+        let num = parseInt(numberplus.textContent) // 정답
+        num += 1
+        numberplus.textContent = num
+      })
+      
+      
+      ;
+    </script>
+
+
+    <!-- 색상을 입력하면 텍스트의 색이 변하는 기능을 구현하시오. -->
+    <div class="container">
+      <h1 class="textColor">what color am I</h1>
+      <input type="text" class="changeinput" />
+    </div>
+
+    <script>
+      const textColor = document.querySelector('.textColor')
+      const changeinput = document.querySelector('.changeinput')
+
+      changeinput.addEventListener('input', (event) => {
+        let colortarget = event.target
+        let resulttarget = colortarget.value
+        textColor.style.color = resulttarget
+      })
+    </script>
+  </body>
+</html>
+
+<ul>
+  <li>dkssud</li>
+  <li>dkssud</li>
+  <li>dkssud</li>
+  <li>dkssud</li>
+  <li>dkssud</li>
+</ul>
