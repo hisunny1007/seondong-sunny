@@ -1,0 +1,19 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#add-todo {
+  background-color: green;
+  border: none;
+}
+
+li {
+  display: flex;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <div>title</div>
+      <input type="text" name="title" />
+      <div>body</div>
+      <input type="text" name="body" />
+      <input type="submit" />
+    </form>
+    <script>
+      const form = document.querySelector('form');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const title = document.querySelector('input[name=title]').value;
+        const body = document.querySelector('input[name=body]').value;
+        // const formData = new FormData(form)
+        // -> key, value값을 갖고 있는 object 형태이긴 하지만 우리가 원하는 ,,일반적인 object가 아님
+        // -> formdata로 갖고 온거를 바꿔줘야함.
+        // -> const objectData = Object.fromEntries(formData);
+
+// url에 냅다 적는 게 get임 , 근데 post는 fetch랑 옵션이랑..다같이 넣어서 보내야함...
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+          method: 'POST',
+          body: JSON.stringify({
+            title: title,
+            body: body,
+            userId: 1,
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json))
+          .catch((error) => console.error(error));
+      });
+    </script>
+  </body>
+</html>

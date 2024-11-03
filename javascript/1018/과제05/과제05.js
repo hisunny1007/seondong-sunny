@@ -11,6 +11,7 @@ let string_variable = '1';
 
 console.log(number_variable);
 console.log(string_variable);
+// 변수의 자료형 출력
 console.log(typeof number_variable);
 console.log(typeof string_variable);
 
@@ -40,9 +41,16 @@ console.log(number1 - number2);
 console.log(number1 * number2);
 console.log(number1 / number2);
 
+let number3 = 10;
+let number4 = 7;
+// 두 변수를 2로 나눈 나머지 결과 출력
+console.log('number3을 2로 나눈 나머지:', number3 % 2); // 출력: 0
+console.log('number4을 2로 나눈 나머지:', number4 % 2); // 출력: 1
+
 //7. 배열 생성과 인덱싱
 let number_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(number_arr);
+// 배열의 특정 요소를 인덱싱하여 출력
 console.log(number_arr[0]);
 console.log(number_arr[2]);
 console.log(number_arr[8]);
@@ -52,6 +60,13 @@ console.log(number_arr[0], number_arr[2], number_arr[8], number_arr[9]);
 //8. 빈 배열과 원소 추가
 let arr = [];
 arr.push(10, 20, 30, 40, 50);
+
+// 배열에 5개의 원소 추가
+arr.push(10);
+arr.push(20);
+arr.push(30);
+arr.push(40);
+arr.push(50);
 
 console.log(arr);
 
@@ -67,6 +82,7 @@ let todo = {
   completed: false,
 };
 
+// 객체의 각 값을 접근하고 출력
 console.log(todo.userId);
 console.log(todo.id);
 console.log(todo.title);
