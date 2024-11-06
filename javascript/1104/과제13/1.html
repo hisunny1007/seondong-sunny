@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // 1. id가 container인 div 태그를 생성한다.
+      // 해당 body 태그의 자식 태그로 추가한다.
+
+      const divTag = document.createElement('div')
+      divTag.id = 'container' // '' string으로 써야 함
+
+      // divTag.classList.add('container')  // class가 container ...
+
+      const bodyTag = document.querySelector('body')
+      bodyTag.append(divTag)
+
+      // // 강사님 풀이 //
+      // const container = document.createElement('div');
+      // container.id = 'container';
+
+      // const body = document.querySelector('body');
+      // body.appendChild(container);
+    </script>
+  </body>
+</html>
+

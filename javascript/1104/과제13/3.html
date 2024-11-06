@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .greet {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p class="greet">Hello World</p>
+    </div>
+    <script>
+      // 3. 5개의 li 자식 태그를 가진 ul 태그를 div#container의 자식 태그로 추가한다.
+      // 각 li 태그의 텍스트는 1, 2, 3, 4, 5로 설정한다.
+      // 각 li 태그의 id는 list-1, list-2, list-3, list-4, list-5로 설정한다.
+      // 각 li 태그에는 텍스트가 "삭제"인 button 태그를 자식 태그로 추가한다.
+
+      const ulTag = document.createElement('ul');
+      const container = document.querySelector('#container');
+
+      for (let i = 0; i < 5; i++) {
+        let liTag = document.createElement('li');
+        // console.log(liTag);
+        // liTag.textContent = i; // let i = 0부터 하는게 더 자연스러움
+        liTag.textContent = i + 1;
+        liTag.id = `list-${i}`;
+        // liTag.setAttribute('id', `list-${i}`);
+
+        let buttonTag = document.createElement('button');
+        buttonTag.textContent = '삭제';
+
+        liTag.append(buttonTag);
+        ulTag.append(liTag);
+      }
+
+      container.append(ulTag);
+
+      // let liTag = document.createElement('li')
+
+      // let liTag1 = document.createElement('li')
+      // liTag1.textContent = 1
+      // liTag1.id = 'list-1'
+
+      // let liTag2 = document.createElement('li')
+      // liTag2.textContent = 2
+      // liTag2.id = 'list-2'
+
+      // let liTag3 = document.createElement('li')
+      // liTag3.textContent = 3
+      // liTag3.id = 'list-3'
+
+      // let liTag4 = document.createElement('li')
+      // liTag4.textContent = 4
+      // liTag4.id = 'list-4'
+
+      // let liTag5 = document.createElement('li')
+      // liTag5.textContent = 5
+      // liTag5.id = 'list-5'
+    </script>
+  </body>
+</html>
+
+
+<!-- 강사님 풀이
+const ul = document.createElement('ul');
+
+for (let i = 1; i <= 5; i++) {
+  const li = document.createElement('li');
+  li.id = `list-${i}`;
+  li.textContent = i;
+
+  const button = document.createElement('button');
+  button.textContent = '삭제';
+
+  li.appendChild(button);
+  ul.appendChild(li);
+}
+
+const container = document.querySelector('#container');
+container.appendChild(ul); -->

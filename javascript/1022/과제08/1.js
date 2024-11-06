@@ -8,6 +8,8 @@
 let N = 13;
 console.log(N);
 
-for (let num = 1; num <= N; num++) {
-  console.log(num);
+// 1부터 N까지 출력하는 for 반복문
+for (let i = 1; i <= N; i++) {
+  console.log(i);
 }
+

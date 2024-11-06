@@ -11,9 +11,12 @@ let total = 0
 
 console.log(N)
 
-for (let i = 1 ; i <= 7; i++) {
+// 1부터 N까지 짝수의 합을 구하는 for 반복문
+for (let i = 1 ; i <= N; i++) {
   if (i % 2 === 0) {
     total += i
   }
 }
+
+// total 출력
 console.log(total)

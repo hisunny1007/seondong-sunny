@@ -8,10 +8,12 @@ let N = 3
 
 let count = 0
 
+// 1부터 N까지 짝수의 개수를 구하는 for 반복문
 for (let i = 1 ; i <= N; i++) {
   if( i % 2 === 0) {
     count ++
   }
 }
 
+// 짝수의 개수 출력
 console.log(count)

@@ -13,3 +13,10 @@ while (num <= N) {
   console.log(num);
   num++;
 }
+
+// 1부터 N까지 출력하는 while 반복문
+let i = 1;
+while (i <= N) {
+  console.log(i);
+  i++;
+}

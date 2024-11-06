@@ -5,9 +5,9 @@ arr = [0, 1, 2, 3, 4, 5]
 
 // 짝수 => 2로 나눴을 때 나머지가 0
 
-for (let num of arr) {
-  if(num !==0 && !(num % 2)) {
-    console.log(num)
+for (let value of arr) {
+  if (value !== 0 && value % 2 ===0) {
+    console.log(value)
   }
 }
 
@@ -15,3 +15,15 @@ for (let num of arr) {
 
 // if (!(num%2)) 2로 나눴을 때 나머지가 없다
 // if (num % 2 === 0) 2로 나눴을 때 나머지가 없다
+
+for (let array of arr) {
+  if (!(array % 2)) {
+    console.log(array)
+  }
+}
+
+for (let i = 0; i <= arr.length; i ++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+}
