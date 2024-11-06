@@ -22,25 +22,45 @@
       // 각 li 태그의 id는 list-1, list-2, list-3, list-4, list-5로 설정한다.
       // 각 li 태그에는 텍스트가 "삭제"인 button 태그를 자식 태그로 추가한다.
 
-      const ulTag = document.createElement('ul');
-      const container = document.querySelector('#container');
+      // const ulTag = document.createElement('ul');
+      // const container = document.querySelector('#container');
 
-      for (let i = 0; i < 5; i++) {
-        let liTag = document.createElement('li');
-        // console.log(liTag);
-        // liTag.textContent = i; // let i = 0부터 하는게 더 자연스러움
-        liTag.textContent = i + 1;
-        liTag.id = `list-${i}`;
-        // liTag.setAttribute('id', `list-${i}`);
+      // for (let i = 1; i <= 5; i++) {
+      //   let liTag = document.createElement('li');
+      //   // console.log(liTag);
+      //   liTag.textContent = i;
+      //   liTag.id = `list-${i}`;
+      //   // liTag.setAttribute('id', `list-${i}`);
 
-        let buttonTag = document.createElement('button');
-        buttonTag.textContent = '삭제';
+      //   let buttonTag = document.createElement('button');
+      //   buttonTag.textContent = '삭제';
 
-        liTag.append(buttonTag);
-        ulTag.append(liTag);
+      //   liTag.append(buttonTag);
+      //   ulTag.append(liTag);
+      // }
+
+      // container.append(ulTag);
+
+       // 1. ul태그를 만들자
+      const ul = document.createElement("ul");
+
+      // 2. 5개의 li 태그를 만들자 / 각 li 태그의 텍스트와 id 설정하자
+      for (let i = 1; i <= 5; i ++) {
+        const li = document.createElement('li')
+        li.textContent = i
+        li.id = `list-${i}`
+        
+        // 3. 버튼 태그 만들자
+        const button = document.createElement('button')
+        button.textContent = "삭제"
+
+        li.append(button)
+        ul.append(li)
       }
 
-      container.append(ulTag);
+      const container = document.querySelector('#container')
+      container.append(ul)
+
 
       // let liTag = document.createElement('li')
 

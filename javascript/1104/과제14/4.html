@@ -20,13 +20,15 @@
       <ul id="list"></ul>
     </div>
     <script>
-      let btn = document.querySelector('#btn')
-      let list = document.querySelector('#list')
+      let btn = document.querySelector('#btn');
+      let list = document.querySelector('#list');
+      let textInput = document.querySelector('#text-input');
 
       btn.addEventListener('click', () => {
-        let liTag = document.createElement('li')
-        list.append(liTag)
-      })
+        let liTag = document.createElement('li');
+        liTag.textContent = textInput;
+        list.append(liTag);
+      });
       // 4. button#btn에 아래 이벤트를 추가한다.
       // 버튼을 클릭하면 li 태그를 생성하고, ul#list의 자식 태그로 추가한다.
       // li 태그의 텍스트는 input#text-input에 입력한 텍스트로 설정한다.
