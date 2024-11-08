@@ -31,10 +31,24 @@
       button.addEventListener('click', () => {
         let li = document.createElement('li');
         li.textContent = number;
-        number++;
+        number++; // number += 1
 
         ul.append(li);
       });
+
+      // 강사님 풀이 //
+      // const button = document.querySelector('#btn');
+      // const list = document.querySelector('#list');
+      // let count = 1;
+
+      // button.addEventListener('click', () => {
+      //   const li = document.createElement('li');
+      //   li.textContent = count;
+      //   list.appendChild(li);
+
+      //   count = count + 1;
+      // });
     </script>
   </body>
 </html>
+

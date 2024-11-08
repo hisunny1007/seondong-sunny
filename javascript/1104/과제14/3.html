@@ -24,10 +24,13 @@
       // 버튼에 마우스를 올리면 해당 버튼 요소에 .btn-hover를 추가한다.
       // 버튼에서 마우스를 떼면 해당 버튼 요소에 .btn-hover를 제거한다.
 
+      // 하나의 배열로 봄
+
       let buttonArray = document.querySelectorAll('button');
 
-      for (let i = 0; i <= 2; i++) {
-        let button = buttonArray[i];
+      for (let index = 0; index <= 2; index++) {
+        let button = buttonArray[index];
+
         button.addEventListener('mouseover', () => {
           button.classList.add('btn-hover');
         });
@@ -36,6 +39,18 @@
           button.classList.remove('btn-hover');
         });
       }
+
+      // 강사님 풀이 //
+      // const button_arr = document.querySelectorAll('button');
+
+      // button_arr.forEach((button) => {
+      //   button.addEventListener('mouseover', () => {
+      //     button.classList.add('btn-hover');
+      //   });
+      //   button.addEventListener('mouseout', () => {
+      //     button.classList.remove('btn-hover');
+      //   });
+      // });
     </script>
   </body>
 </html>
