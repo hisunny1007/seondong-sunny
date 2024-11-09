@@ -11,3 +11,5 @@ export default function Cold1() {
 
   return result;
 }
+
+// resul라는 변수 만들어서 return 해도 됨
