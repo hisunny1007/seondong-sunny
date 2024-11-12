@@ -16,7 +16,7 @@ for num in lst:
 
 
 # 인덱스로 접근하면 원본데이터 접근해서 원본데이터 간단한 수정 가능함
-for indx in range(len(lst))
+for idx in range(len(lst))
   # print(num[idx])
   lst[idx] += 5
 

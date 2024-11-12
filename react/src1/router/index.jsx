@@ -17,11 +17,6 @@ const router = createBrowserRouter([
         path: "/posts",
         element: <PostList />,
       },
-      {
-        path: "/posts/:postId", // 동적 라우팅. 변수로 지정함 :
-        element: <PostDetail />,
-      },
-
     ],
   },
 ]);
