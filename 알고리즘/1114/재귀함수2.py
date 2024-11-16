@@ -40,6 +40,7 @@ def my_func(idx, ans):
 print(my_func(0, ans = -float("INF")))
 
 
+
 def find(depth):
   # 종료 조건
   if depth == 10:
@@ -54,3 +55,4 @@ def find(depth):
   print(f'올라가는 중... 깊이는 {depth}')
 
 find(0)
+
