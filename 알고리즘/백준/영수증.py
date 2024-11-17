@@ -38,16 +38,19 @@
 X = int(input())
 N = int(input())
 
-# a = [20000, 30000, 10000, 5000]
-# b = [5, 2, 6 ,8]
+total = 0
 
-a, b = map(int, input().split())
+for _ in range(N):
+    a, b = map(int, input().split())
+    total += a * b
 
-sum = 0
-for idx in range(N):
-    # sum = sum + (a[idx] * b[idx])
-    sum += a[idx] * b[idx]
-    if X == sum:
-        print("Yes")
-    else:
-        print("No")
+if total == X:
+    print("Yes")
+else:
+    print("No")
+
+# e(N)의 특징:
+# 0부터 N-1까지의 정수를 생성.
+# 정확히 N번 반복.
+# 따라서 range(N)은 N개의 데이터를 처리할 때 적합합니다.
+# 다시 코드 확인:
