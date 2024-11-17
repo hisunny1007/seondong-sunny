@@ -1,7 +1,5 @@
 N, M = map(int, input().split())
 
-# 입력값을 행렬로 만들기
-
 #  바깥 리스트 만들기
 arr_a = []
 arr_b = []
@@ -20,6 +18,8 @@ for _ in range(M):
 for i in range(N):
     for j in range(M):
         ans = arr_a[i][j] + arr_b[i][j]
+        # arr_result.append(ans)
         # a[0][0]+b[0][0]
         # a[0][1]+b[0][1]
-        print(ans)
+        print(ans, end=" ")
+  
