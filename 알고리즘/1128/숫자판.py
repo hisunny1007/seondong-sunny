@@ -10,6 +10,8 @@ ans = set()
 def perm(depth, r, c, num):
     if depth == 6:
         # 집합에 집어넣고 리턴
+        ans.add(num)
+        return
 
     # 다음에 갈 곳을 탐색해서(델타탐색)
       # 다음 좌표 찍어보고
