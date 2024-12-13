@@ -1,6 +1,11 @@
 package org.example;
 
-import java.sql.SQLOutput;
+import org.example.javaintro.Dog;
+import org.example.practice.Bread;
+//import org.example.practice.*; *은 전체를 뜻함
+
+import static java.lang.Math.*;
+import static org.example.practice.Coffee.*;
 
 //TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
@@ -71,6 +76,55 @@ public class Main {
         ipod.pushPowerButton();
         ipod.showInfo();
 
+        System.out.println();
+
+
+        Calculator cal = new Calculator(12,4);
+        System.out.println(cal.add());
+        System.out.println(cal.minus());
+        System.out.println(cal.multiply());
+        System.out.println(cal.divide());
+
+        Calculator2 cal2= new Calculator2();
+        Calculator2 cal3 = new Calculator2();
+        // 이건 인스턴스
+        System.out.println(cal2.add(10,4));
+        System.out.println(cal2.minus(30,12));
+
+        // 이건 클래스
+        System.out.println(Calculator2.staticAdd(10,4));
+//        System.out.println(Calculator2.add()); 실행 불가함. add는 인스턴스 메서드라서
+
+        Rectangle rectangle = new Rectangle(10,30);
+        System.out.println(rectangle.angleCount);
+        System.out.println(Rectangle.angleCount);
+        Rectangle.angleCount = 10;
+        System.out.println("rectangle.angleCount = " + rectangle.angleCount);
+        System.out.println(Rectangle.angleCount);
+
+        System.out.println();
+        Dog poppy = new Dog("puddle", "poppy");
+        Dog poppyJunior = new Dog("puddle", "poppyjunior");
+        // 클래스에서
+        System.out.println(Dog.count);
+        // 스태틱 변수에서 인스턴스에 접근하려고 하니까
+        System.out.println(poppy.count); // alt + enter로 확인해봐
+
+        // Person 생성자
+        System.out.println("person");
+        Person p1 = new Person();
+        Person p2 = new Person("kyle",10);
+        System.out.println(p1.name);
+        System.out.println(p2.name);
+
+        // 외부 폴더에 있는 class 사용할 때 import 필요함
+        // Coffee 클래스 이름만 적으면 자동으로 import 돼
+        taste();
+        Bread.taste();
+
+        // Math.abs(-3); 에 alt + enter 누르면 전체 *로 가져옴
+        abs(-3);
+        pow(3, 5);
 
     }
 }
@@ -89,5 +143,3 @@ public class Main {
 
 // 변수랑 메서드는 카멜케이스(소문자시작)
 // 클래스는 파스칼케이스(대문자시작)
-
-//

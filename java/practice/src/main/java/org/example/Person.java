@@ -6,10 +6,17 @@ public class Person {
     int age;
 
     // 생성자 (클래스와 같은 이름 가지고 있는 함수)
-    Person(String name, int age) {
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
+
+    // 기본값 넣어줄 때 사용함 (string null, int 0이 기본값이지만 내가 직접 기본값 설정 가능)
+    public Person() {
+        this.name = "basic name";
+        this.age = 18;
+    }
+
 
     String calculateArea() {
         return "name :" + this.name + " age :" + this.age;
