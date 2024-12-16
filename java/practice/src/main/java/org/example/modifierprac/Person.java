@@ -5,7 +5,7 @@ public class Person {
 // - 같은 클래스 내에서만 접근할 수 있는 이름(String name) 변수를 작성하시오.
 // - 모든 곳에서 접근할 수 있는 나이(int age) 변수를 작성하시오.
 // - 같은 패키지 내에서만 접근할 수 있는 키(double height) 변수를 작성하시오.
-    // default는 안 적어
+    // 같은 패키지 내에서 => default는 안 적어
 
     private String name;
     public int age;
