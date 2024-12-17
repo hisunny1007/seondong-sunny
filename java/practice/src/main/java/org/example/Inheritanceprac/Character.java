@@ -10,6 +10,9 @@ public class Character {
     protected int level;
     protected int power;
 
+
+
+
     public Character(String name) {
         this.name = name;
         this.level = 1;
