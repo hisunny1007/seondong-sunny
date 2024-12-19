@@ -17,12 +17,13 @@ package org.example.compositionprac;
 
 
 public class Building {
-
+    private String name;
     // composition - address 클래스를 변수로 가짐
     // address 클래스 타입의 변수 address를 인스턴스 변수로 포함
     private Address address;
 
-    public Building(Address address) {
+    public Building(String name, Address address) {
+        this.name = name;
         this.address = address;
     }
 
@@ -30,5 +31,6 @@ public class Building {
     public void showAddress() {
         System.out.println("city name: " + this.address.getCity());
         System.out.println("street name : " + this.address.getStreet());
+        System.out.println(this.name + " address is : " + this.address.getFullAddress());
     }
 }
