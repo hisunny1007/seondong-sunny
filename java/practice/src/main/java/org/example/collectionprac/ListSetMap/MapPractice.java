@@ -1,7 +1,6 @@
-package org.example.collectionprac;
+package org.example.collectionprac.ListSetMap;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 
 public class MapPractice {

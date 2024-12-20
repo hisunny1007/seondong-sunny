@@ -1,4 +1,4 @@
-package org.example.collectionprac;
+package org.example.collectionprac.ListSetMap;
 
 import java.util.ArrayList;
 import java.util.List;
